@@ -26,6 +26,10 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
+        type: 'javascript/auto',
+        resolve: {
+          fullySpecified: false,
+        },
         loader: 'babel-loader',
         options: {
           presets: ['@babel/preset-env'],
